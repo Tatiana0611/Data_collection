@@ -40,6 +40,7 @@ if response.ok:
     for i in j_data['results']:
         print('Название: ', i.get('name'))
         print('Адрес: ', i.get('location').get('formatted_address'))
+        
         print('Рейтинг: ', i.get('rating'))
         print()
 else:
